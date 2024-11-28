@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Info Dashboard </title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1 class="admv">Admin View</h1>
+        <h1>View Student Information</h1>
+        <label for="nameDropdown">Select a Student:</label>
+        <select id="nameDropdown">
+            <option value="">Select a Name</option>
+        </select>
+       
+   
+        <button id="fetchDetails">Show Info</button>
+        <div id="details" style="display:none;">
+            <h2>Attendance Report</h2>
+            <div id="detailsContainer"></div>
+            <canvas id="attendanceChart" width="400" height="200"></canvas>
+        </div>
+        <div id="libraryContainer" style="margin-top: 20px; display: none;">
+            <h2>Library Information</h2>
+            <div id="libraryInfoContainer"></div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

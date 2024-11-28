@@ -1,0 +1,117 @@
+
+
+
+body {
+    font-family: "Comfortaa", sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#fetchDetails{
+    font-family: "Comfortaa", sans-serif;
+}
+
+#nameDropdown{
+    font-family: "Comfortaa", sans-serif;
+}
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+    display: inline-block;
+}
+
+select, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+select {
+    background-color: #fafafa;
+}
+
+button {
+    background-color: #000000;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #000000;
+}
+
+#details {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f6f1f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#libraryContainer {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #f6f1f1;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+}
+.detail-item {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.detail-item .label {
+    font-weight: bold;
+    width: 120px;
+}
+
+.detail-item .value {
+    font-style: italic;
+    color: #555;
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    select, button {
+        font-size: 1em;
+    }
+
+    .detail-item .label {
+        width: 100px;
+    }
+}
+
+.admv{
+    text-decoration: underline;
+}
+
+#passcodeInput{
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 19px;
+}
